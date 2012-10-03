@@ -12,15 +12,20 @@ Note: Only one membership type can synchronize with one WordPress role since a W
 1. The first step is to Download the Plugin and put it under your sites wp-content\plugins\ directory  and rename the folder as "civi_member_sync". 
    Then Activate the plugin by going to your WordPress site's Plugin page at http://example.com/wp-admin/plugins.php
    It will be CiviMember Role Synchronize.
-2. Visit the Plugin's configuration page at http://example.com/wp-admin/admin.php?page=civi_member_sync/list.php
+   
+2. Visit the Plugin's configuration page at http://example.com/wp-admin/admin.php?page=civi_member_sync/list.php or 
+   go to http:///example.com/wp-admin/options-general.php menu and click CiviMember Roles Sync on the Left side.
+      
 3. Click on "Add Association Rule" to create a rule. You will need to create a rule for every CiviCRM membership type you would like to synchronize.
    For every membership type, you will need to determine the CiviMember states that define the member as "current" thereby granting them the 
    appropriate WordPress role. It is most common to define "New, Current, & Grace" as current. Similarly, select which states represent the "expired" 
    status thereby removing the WordPress role from the user. It is most common to define "Expired, Pending, Cancelled, & Deceased" as the expired
-   status.Also Set the role to be assigned if the membership has Expired in  "Expiry Role".     
+   status.Also Set the role to be assigned if the membership has Expired in  "Expiry Role".   
+     
 4. Return to the configuration page for CiviMember roles Sync (http://example.com/wp-admin/admin.php?page=civi_member_sync/list.php). 
    This setting determines when Wordpess will check if the user has a "Current" membership status in CiviCRM  whenever a user logs in or out of the
    site and synchronize the Wordpess Role.
+   
 5. The last option that is sometimes necessary is to manually synchronize users. Click on the "Manually Synchronize" in configuration page at 
    http://example.com/wp-admin/admin.php?page=civi_member_sync/list.php  tab to do so. 
    You will likely use this when you initially configure this module to synchronize your existing users.
