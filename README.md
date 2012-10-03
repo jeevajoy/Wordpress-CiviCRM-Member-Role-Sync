@@ -17,7 +17,7 @@ Note: Only one membership type can synchronize with one WordPress role since a W
    For every membership type, you will need to determine the CiviMember states that define the member as "current" thereby granting them the 
    appropriate WordPress role. It is most common to define "New, Current, & Grace" as current. Similarly, select which states represent the "expired" 
    status thereby removing the WordPress role from the user. It is most common to define "Expired, Pending, Cancelled, & Deceased" as the expired
-   status.
+   status.Also Set the role to be assigned if the membership has Expired in  "Expiry Role".     
 4. Return to the configuration page for CiviMember roles Sync (http://example.com/wp-admin/admin.php?page=civi_member_sync/list.php). 
    This setting determines when Wordpess will check if the user has a "Current" membership status in CiviCRM  whenever a user logs in or out of the
    site and synchronize the Wordpess Role.
