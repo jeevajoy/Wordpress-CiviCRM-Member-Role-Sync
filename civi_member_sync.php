@@ -26,8 +26,7 @@ function jal_install() {
           `current_rule` varchar(255) NOT NULL,
           `expiry_rule` varchar(255) NOT NULL,
           `expire_wp_role` varchar(255) NOT NULL,
-           PRIMARY KEY (`id`),
-           UNIQUE KEY `wp_role` (`wp_role`),
+           PRIMARY KEY (`id`),         
            UNIQUE KEY `civi_mem_type` (`civi_mem_type`)
            )ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;";
 
